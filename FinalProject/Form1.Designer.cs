@@ -38,6 +38,7 @@
             this.loginButton = new System.Windows.Forms.Button();
             this.welcomeLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.signUpButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // managerButton
@@ -109,7 +110,7 @@
             // 
             // loginButton
             // 
-            this.loginButton.Location = new System.Drawing.Point(139, 234);
+            this.loginButton.Location = new System.Drawing.Point(181, 234);
             this.loginButton.Name = "loginButton";
             this.loginButton.Size = new System.Drawing.Size(81, 40);
             this.loginButton.TabIndex = 7;
@@ -137,12 +138,22 @@
             this.label1.TabIndex = 9;
             this.label1.Text = "Please select your option and login!";
             // 
+            // signUpButton
+            // 
+            this.signUpButton.Location = new System.Drawing.Point(62, 234);
+            this.signUpButton.Name = "signUpButton";
+            this.signUpButton.Size = new System.Drawing.Size(81, 40);
+            this.signUpButton.TabIndex = 10;
+            this.signUpButton.Text = "Sign Up";
+            this.signUpButton.UseVisualStyleBackColor = true;
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(389, 296);
+            this.Controls.Add(this.signUpButton);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.welcomeLabel);
             this.Controls.Add(this.loginButton);
@@ -172,6 +183,7 @@
         private System.Windows.Forms.Button loginButton;
         private System.Windows.Forms.Label welcomeLabel;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button signUpButton;
     }
 }
 
