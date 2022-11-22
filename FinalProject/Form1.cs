@@ -26,5 +26,10 @@ namespace FinalProject
         {
 
         }
+
+        private void welcomeLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

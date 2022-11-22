@@ -37,12 +37,13 @@
             this.errorLabel = new System.Windows.Forms.Label();
             this.loginButton = new System.Windows.Forms.Button();
             this.welcomeLabel = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // managerButton
             // 
             this.managerButton.AutoSize = true;
-            this.managerButton.Location = new System.Drawing.Point(119, 49);
+            this.managerButton.Location = new System.Drawing.Point(138, 80);
             this.managerButton.Name = "managerButton";
             this.managerButton.Size = new System.Drawing.Size(82, 20);
             this.managerButton.TabIndex = 0;
@@ -54,7 +55,7 @@
             // clientButton
             // 
             this.clientButton.AutoSize = true;
-            this.clientButton.Location = new System.Drawing.Point(119, 76);
+            this.clientButton.Location = new System.Drawing.Point(138, 107);
             this.clientButton.Name = "clientButton";
             this.clientButton.Size = new System.Drawing.Size(61, 20);
             this.clientButton.TabIndex = 1;
@@ -65,7 +66,7 @@
             // usernameLabel
             // 
             this.usernameLabel.AutoSize = true;
-            this.usernameLabel.Location = new System.Drawing.Point(40, 104);
+            this.usernameLabel.Location = new System.Drawing.Point(59, 135);
             this.usernameLabel.Name = "usernameLabel";
             this.usernameLabel.Size = new System.Drawing.Size(73, 16);
             this.usernameLabel.TabIndex = 2;
@@ -75,7 +76,7 @@
             // pwLabel
             // 
             this.pwLabel.AutoSize = true;
-            this.pwLabel.Location = new System.Drawing.Point(40, 146);
+            this.pwLabel.Location = new System.Drawing.Point(59, 177);
             this.pwLabel.Name = "pwLabel";
             this.pwLabel.Size = new System.Drawing.Size(70, 16);
             this.pwLabel.TabIndex = 3;
@@ -83,23 +84,23 @@
             // 
             // usernameTextBox
             // 
-            this.usernameTextBox.Location = new System.Drawing.Point(119, 104);
+            this.usernameTextBox.Location = new System.Drawing.Point(139, 135);
             this.usernameTextBox.Name = "usernameTextBox";
-            this.usernameTextBox.Size = new System.Drawing.Size(100, 22);
+            this.usernameTextBox.Size = new System.Drawing.Size(142, 22);
             this.usernameTextBox.TabIndex = 4;
             // 
             // passwordTextBox
             // 
-            this.passwordTextBox.Location = new System.Drawing.Point(119, 146);
+            this.passwordTextBox.Location = new System.Drawing.Point(139, 177);
             this.passwordTextBox.Name = "passwordTextBox";
-            this.passwordTextBox.Size = new System.Drawing.Size(100, 22);
+            this.passwordTextBox.Size = new System.Drawing.Size(142, 22);
             this.passwordTextBox.TabIndex = 5;
             // 
             // errorLabel
             // 
             this.errorLabel.AutoSize = true;
             this.errorLabel.ForeColor = System.Drawing.Color.Red;
-            this.errorLabel.Location = new System.Drawing.Point(23, 171);
+            this.errorLabel.Location = new System.Drawing.Point(46, 215);
             this.errorLabel.Name = "errorLabel";
             this.errorLabel.Size = new System.Drawing.Size(264, 16);
             this.errorLabel.TabIndex = 6;
@@ -108,9 +109,9 @@
             // 
             // loginButton
             // 
-            this.loginButton.Location = new System.Drawing.Point(119, 190);
+            this.loginButton.Location = new System.Drawing.Point(139, 234);
             this.loginButton.Name = "loginButton";
-            this.loginButton.Size = new System.Drawing.Size(75, 23);
+            this.loginButton.Size = new System.Drawing.Size(81, 40);
             this.loginButton.TabIndex = 7;
             this.loginButton.Text = "Login";
             this.loginButton.UseVisualStyleBackColor = true;
@@ -118,18 +119,31 @@
             // welcomeLabel
             // 
             this.welcomeLabel.AutoSize = true;
-            this.welcomeLabel.Location = new System.Drawing.Point(20, 18);
+            this.welcomeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.welcomeLabel.Location = new System.Drawing.Point(46, 26);
             this.welcomeLabel.Name = "welcomeLabel";
-            this.welcomeLabel.Size = new System.Drawing.Size(371, 16);
+            this.welcomeLabel.Size = new System.Drawing.Size(260, 18);
             this.welcomeLabel.TabIndex = 8;
-            this.welcomeLabel.Text = "Welcome to the Theatre website, select your option and login!";
+            this.welcomeLabel.Text = "Welcome to the Theatre website! ";
+            this.welcomeLabel.Click += new System.EventHandler(this.welcomeLabel_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(41, 44);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(276, 18);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "Please select your option and login!";
             // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(401, 242);
+            this.ClientSize = new System.Drawing.Size(389, 296);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.welcomeLabel);
             this.Controls.Add(this.loginButton);
             this.Controls.Add(this.errorLabel);
@@ -157,6 +171,7 @@
         private System.Windows.Forms.Label errorLabel;
         private System.Windows.Forms.Button loginButton;
         private System.Windows.Forms.Label welcomeLabel;
+        private System.Windows.Forms.Label label1;
     }
 }
 
