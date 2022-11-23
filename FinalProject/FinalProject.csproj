@@ -46,11 +46,41 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BookingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookingForm.Designer.cs">
+      <DependentUpon>BookingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientHomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientHomePage.Designer.cs">
+      <DependentUpon>ClientHomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientSelection.Designer.cs">
+      <DependentUpon>ClientSelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinalClientPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinalClientPage.Designer.cs">
+      <DependentUpon>FinalClientPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaymentPage.Designer.cs">
+      <DependentUpon>PaymentPage.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -61,8 +91,23 @@
       <DependentUpon>signupForm.cs</DependentUpon>
     </Compile>
     <Compile Include="User.cs" />
+    <EmbeddedResource Include="BookingForm.resx">
+      <DependentUpon>BookingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientHomePage.resx">
+      <DependentUpon>ClientHomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientSelection.resx">
+      <DependentUpon>ClientSelection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinalClientPage.resx">
+      <DependentUpon>FinalClientPage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaymentPage.resx">
+      <DependentUpon>PaymentPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

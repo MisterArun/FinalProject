@@ -38,11 +38,12 @@
             this.confirmPasswordTextBox = new System.Windows.Forms.TextBox();
             this.emailTextBox = new System.Windows.Forms.TextBox();
             this.signupLabel = new System.Windows.Forms.Label();
+            this.cancelButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // submitButton
             // 
-            this.submitButton.Location = new System.Drawing.Point(151, 269);
+            this.submitButton.Location = new System.Drawing.Point(204, 272);
             this.submitButton.Name = "submitButton";
             this.submitButton.Size = new System.Drawing.Size(75, 23);
             this.submitButton.TabIndex = 0;
@@ -70,7 +71,7 @@
             // confirmPasswordLabel
             // 
             this.confirmPasswordLabel.AutoSize = true;
-            this.confirmPasswordLabel.Location = new System.Drawing.Point(27, 167);
+            this.confirmPasswordLabel.Location = new System.Drawing.Point(27, 161);
             this.confirmPasswordLabel.Name = "confirmPasswordLabel";
             this.confirmPasswordLabel.Size = new System.Drawing.Size(118, 16);
             this.confirmPasswordLabel.TabIndex = 3;
@@ -79,7 +80,7 @@
             // emailLabel
             // 
             this.emailLabel.AutoSize = true;
-            this.emailLabel.Location = new System.Drawing.Point(101, 206);
+            this.emailLabel.Location = new System.Drawing.Point(101, 200);
             this.emailLabel.Name = "emailLabel";
             this.emailLabel.Size = new System.Drawing.Size(44, 16);
             this.emailLabel.TabIndex = 4;
@@ -101,14 +102,14 @@
             // 
             // confirmPasswordTextBox
             // 
-            this.confirmPasswordTextBox.Location = new System.Drawing.Point(151, 167);
+            this.confirmPasswordTextBox.Location = new System.Drawing.Point(151, 161);
             this.confirmPasswordTextBox.Name = "confirmPasswordTextBox";
             this.confirmPasswordTextBox.Size = new System.Drawing.Size(128, 22);
             this.confirmPasswordTextBox.TabIndex = 7;
             // 
             // emailTextBox
             // 
-            this.emailTextBox.Location = new System.Drawing.Point(151, 206);
+            this.emailTextBox.Location = new System.Drawing.Point(151, 200);
             this.emailTextBox.Name = "emailTextBox";
             this.emailTextBox.Size = new System.Drawing.Size(128, 22);
             this.emailTextBox.TabIndex = 8;
@@ -123,11 +124,21 @@
             this.signupLabel.TabIndex = 9;
             this.signupLabel.Text = "Please enter the following information below";
             // 
+            // cancelButton
+            // 
+            this.cancelButton.Location = new System.Drawing.Point(104, 272);
+            this.cancelButton.Name = "cancelButton";
+            this.cancelButton.Size = new System.Drawing.Size(75, 23);
+            this.cancelButton.TabIndex = 10;
+            this.cancelButton.Text = "Cancel";
+            this.cancelButton.UseVisualStyleBackColor = true;
+            // 
             // signupForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(401, 335);
+            this.Controls.Add(this.cancelButton);
             this.Controls.Add(this.signupLabel);
             this.Controls.Add(this.emailTextBox);
             this.Controls.Add(this.confirmPasswordTextBox);
@@ -157,5 +168,6 @@
         private System.Windows.Forms.TextBox confirmPasswordTextBox;
         private System.Windows.Forms.TextBox emailTextBox;
         private System.Windows.Forms.Label signupLabel;
+        private System.Windows.Forms.Button cancelButton;
     }
 }
