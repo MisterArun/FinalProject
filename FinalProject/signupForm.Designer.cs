@@ -31,24 +31,23 @@
             this.submitButton = new System.Windows.Forms.Button();
             this.firstNameLabel = new System.Windows.Forms.Label();
             this.passwordLabel = new System.Windows.Forms.Label();
-            this.confirmPasswordLabel = new System.Windows.Forms.Label();
-            this.emailLabel = new System.Windows.Forms.Label();
             this.usernameTextBox = new System.Windows.Forms.TextBox();
             this.passwordTextBox = new System.Windows.Forms.TextBox();
-            this.confirmPasswordTextBox = new System.Windows.Forms.TextBox();
-            this.emailTextBox = new System.Windows.Forms.TextBox();
             this.signupLabel = new System.Windows.Forms.Label();
             this.cancelButton = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // submitButton
             // 
-            this.submitButton.Location = new System.Drawing.Point(204, 272);
+            this.submitButton.Location = new System.Drawing.Point(204, 215);
             this.submitButton.Name = "submitButton";
             this.submitButton.Size = new System.Drawing.Size(75, 23);
             this.submitButton.TabIndex = 0;
             this.submitButton.Text = "Submit";
             this.submitButton.UseVisualStyleBackColor = true;
+            this.submitButton.Click += new System.EventHandler(this.submitButton_Click);
             // 
             // firstNameLabel
             // 
@@ -68,24 +67,6 @@
             this.passwordLabel.TabIndex = 2;
             this.passwordLabel.Text = "Password:";
             // 
-            // confirmPasswordLabel
-            // 
-            this.confirmPasswordLabel.AutoSize = true;
-            this.confirmPasswordLabel.Location = new System.Drawing.Point(27, 161);
-            this.confirmPasswordLabel.Name = "confirmPasswordLabel";
-            this.confirmPasswordLabel.Size = new System.Drawing.Size(118, 16);
-            this.confirmPasswordLabel.TabIndex = 3;
-            this.confirmPasswordLabel.Text = "Confirm Password:";
-            // 
-            // emailLabel
-            // 
-            this.emailLabel.AutoSize = true;
-            this.emailLabel.Location = new System.Drawing.Point(101, 200);
-            this.emailLabel.Name = "emailLabel";
-            this.emailLabel.Size = new System.Drawing.Size(44, 16);
-            this.emailLabel.TabIndex = 4;
-            this.emailLabel.Text = "Email:";
-            // 
             // usernameTextBox
             // 
             this.usernameTextBox.Location = new System.Drawing.Point(151, 81);
@@ -100,20 +81,6 @@
             this.passwordTextBox.Size = new System.Drawing.Size(128, 22);
             this.passwordTextBox.TabIndex = 6;
             // 
-            // confirmPasswordTextBox
-            // 
-            this.confirmPasswordTextBox.Location = new System.Drawing.Point(151, 161);
-            this.confirmPasswordTextBox.Name = "confirmPasswordTextBox";
-            this.confirmPasswordTextBox.Size = new System.Drawing.Size(128, 22);
-            this.confirmPasswordTextBox.TabIndex = 7;
-            // 
-            // emailTextBox
-            // 
-            this.emailTextBox.Location = new System.Drawing.Point(151, 200);
-            this.emailTextBox.Name = "emailTextBox";
-            this.emailTextBox.Size = new System.Drawing.Size(128, 22);
-            this.emailTextBox.TabIndex = 8;
-            // 
             // signupLabel
             // 
             this.signupLabel.AutoSize = true;
@@ -126,26 +93,45 @@
             // 
             // cancelButton
             // 
-            this.cancelButton.Location = new System.Drawing.Point(104, 272);
+            this.cancelButton.Location = new System.Drawing.Point(77, 215);
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.Size = new System.Drawing.Size(75, 23);
             this.cancelButton.TabIndex = 10;
             this.cancelButton.Text = "Cancel";
             this.cancelButton.UseVisualStyleBackColor = true;
+            this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(85, 176);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(39, 16);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "Role:";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Manager",
+            "Client"});
+            this.comboBox1.Location = new System.Drawing.Point(151, 168);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 24);
+            this.comboBox1.TabIndex = 12;
             // 
             // signupForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(401, 335);
+            this.ClientSize = new System.Drawing.Size(393, 251);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.cancelButton);
             this.Controls.Add(this.signupLabel);
-            this.Controls.Add(this.emailTextBox);
-            this.Controls.Add(this.confirmPasswordTextBox);
             this.Controls.Add(this.passwordTextBox);
             this.Controls.Add(this.usernameTextBox);
-            this.Controls.Add(this.emailLabel);
-            this.Controls.Add(this.confirmPasswordLabel);
             this.Controls.Add(this.passwordLabel);
             this.Controls.Add(this.firstNameLabel);
             this.Controls.Add(this.submitButton);
@@ -161,13 +147,11 @@
         private System.Windows.Forms.Button submitButton;
         private System.Windows.Forms.Label firstNameLabel;
         private System.Windows.Forms.Label passwordLabel;
-        private System.Windows.Forms.Label confirmPasswordLabel;
-        private System.Windows.Forms.Label emailLabel;
         private System.Windows.Forms.TextBox usernameTextBox;
         private System.Windows.Forms.TextBox passwordTextBox;
-        private System.Windows.Forms.TextBox confirmPasswordTextBox;
-        private System.Windows.Forms.TextBox emailTextBox;
         private System.Windows.Forms.Label signupLabel;
         private System.Windows.Forms.Button cancelButton;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -19,7 +20,7 @@ namespace FinalProject
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
-
+            
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -32,7 +33,13 @@ namespace FinalProject
 
         }
 
-        private void signUpButton_Click(object sender, EventArgs e)
+
+        private void loginButton_Click(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void button1_Click(object sender, EventArgs e)
         {
             signupForm signupForm = new signupForm();
             signupForm.ShowDialog();
