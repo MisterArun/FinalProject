@@ -31,5 +31,11 @@ namespace FinalProject
         {
 
         }
+
+        private void signUpButton_Click(object sender, EventArgs e)
+        {
+            signupForm signupForm = new signupForm();
+            signupForm.ShowDialog();
+        }
     }
 }
