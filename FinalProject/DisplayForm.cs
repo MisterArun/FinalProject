@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace FinalProject
 {
-    public partial class ClientSelection : Form
+    public partial class DisplayForm : Form
     {
-        public ClientSelection()
+        public DisplayForm()
         {
             InitializeComponent();
         }
 
-        private void closeButton_Click(object sender, EventArgs e)
+        private void backButton_Click(object sender, EventArgs e)
         {
             this.Close();
         }

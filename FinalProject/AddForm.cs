@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace FinalProject
 {
-    public partial class ClientSelection : Form
+    public partial class AddForm : Form
     {
-        public ClientSelection()
+        public AddForm()
         {
             InitializeComponent();
         }

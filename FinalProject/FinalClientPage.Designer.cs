@@ -31,6 +31,7 @@
             this.explanationLabel = new System.Windows.Forms.Label();
             this.ticketNumLabel = new System.Windows.Forms.Label();
             this.mainPageButton = new System.Windows.Forms.Button();
+            this.ticketNumberLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // explanationLabel
@@ -55,18 +56,28 @@
             // 
             // mainPageButton
             // 
-            this.mainPageButton.Location = new System.Drawing.Point(60, 131);
+            this.mainPageButton.Location = new System.Drawing.Point(79, 138);
             this.mainPageButton.Name = "mainPageButton";
             this.mainPageButton.Size = new System.Drawing.Size(177, 36);
             this.mainPageButton.TabIndex = 2;
             this.mainPageButton.Text = "Back to Home Page";
             this.mainPageButton.UseVisualStyleBackColor = true;
             // 
+            // ticketNumberLabel
+            // 
+            this.ticketNumberLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ticketNumberLabel.Location = new System.Drawing.Point(218, 90);
+            this.ticketNumberLabel.Name = "ticketNumberLabel";
+            this.ticketNumberLabel.Size = new System.Drawing.Size(100, 23);
+            this.ticketNumberLabel.TabIndex = 3;
+            this.ticketNumberLabel.Text = "ticketId";
+            // 
             // FinalClientPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(351, 207);
+            this.Controls.Add(this.ticketNumberLabel);
             this.Controls.Add(this.mainPageButton);
             this.Controls.Add(this.ticketNumLabel);
             this.Controls.Add(this.explanationLabel);
@@ -82,5 +93,6 @@
         private System.Windows.Forms.Label explanationLabel;
         private System.Windows.Forms.Label ticketNumLabel;
         private System.Windows.Forms.Button mainPageButton;
+        private System.Windows.Forms.Label ticketNumberLabel;
     }
 }

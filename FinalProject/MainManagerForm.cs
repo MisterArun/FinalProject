@@ -10,16 +10,17 @@ using System.Windows.Forms;
 
 namespace FinalProject
 {
-    public partial class ClientSelection : Form
+    public partial class MainManagerForm : Form
     {
-        public ClientSelection()
+        public MainManagerForm()
         {
             InitializeComponent();
         }
 
-        private void closeButton_Click(object sender, EventArgs e)
+        private void showtimeButton_Click(object sender, EventArgs e)
         {
-            this.Close();
+
         }
+
     }
 }
