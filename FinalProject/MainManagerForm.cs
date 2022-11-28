@@ -10,16 +10,17 @@ using System.Windows.Forms;
 
 namespace FinalProject
 {
-    public partial class signupForm : Form
+    public partial class MainManagerForm : Form
     {
-        public signupForm()
+        public MainManagerForm()
         {
             InitializeComponent();
         }
 
-        private void cancelButton_Click(object sender, EventArgs e)
+        private void showtimeButton_Click(object sender, EventArgs e)
         {
-            this.Close();
+
         }
+
     }
 }

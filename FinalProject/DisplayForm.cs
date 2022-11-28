@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace FinalProject
 {
-    public partial class signupForm : Form
+    public partial class DisplayForm : Form
     {
-        public signupForm()
+        public DisplayForm()
         {
             InitializeComponent();
         }
 
-        private void cancelButton_Click(object sender, EventArgs e)
+        private void backButton_Click(object sender, EventArgs e)
         {
             this.Close();
         }

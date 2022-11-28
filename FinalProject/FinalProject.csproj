@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddForm.Designer.cs">
+      <DependentUpon>AddForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="BookingForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,6 +70,18 @@
     <Compile Include="ClientSelection.Designer.cs">
       <DependentUpon>ClientSelection.cs</DependentUpon>
     </Compile>
+    <Compile Include="DeleteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteForm.Designer.cs">
+      <DependentUpon>DeleteForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DisplayForm.Designer.cs">
+      <DependentUpon>DisplayForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="FinalClientPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +93,12 @@
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainManagerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainManagerForm.Designer.cs">
+      <DependentUpon>MainManagerForm.cs</DependentUpon>
     </Compile>
     <Compile Include="PaymentPage.cs">
       <SubType>Form</SubType>
@@ -91,6 +115,9 @@
       <DependentUpon>signupForm.cs</DependentUpon>
     </Compile>
     <Compile Include="User.cs" />
+    <EmbeddedResource Include="AddForm.resx">
+      <DependentUpon>AddForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BookingForm.resx">
       <DependentUpon>BookingForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -100,11 +127,20 @@
     <EmbeddedResource Include="ClientSelection.resx">
       <DependentUpon>ClientSelection.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DeleteForm.resx">
+      <DependentUpon>DeleteForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayForm.resx">
+      <DependentUpon>DisplayForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FinalClientPage.resx">
       <DependentUpon>FinalClientPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainManagerForm.resx">
+      <DependentUpon>MainManagerForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PaymentPage.resx">
       <DependentUpon>PaymentPage.cs</DependentUpon>
